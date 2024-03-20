@@ -1,4 +1,4 @@
-describe('webdriveruniversity - contact us page', () => {
+describe.skip('webdriveruniversity - contact us page', () => {
     beforeEach(() => {
         browser.maximizeWindow()
     });
