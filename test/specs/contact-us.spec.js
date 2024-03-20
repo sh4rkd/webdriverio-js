@@ -22,8 +22,12 @@ describe.skip('webdriveruniversity - contact us page', () => {
         await submit.click()
 
         //confirm 
-        const submissionSucessfull = await $('#contact_reply>h1')
-        await expect(submissionSucessfull).toHaveText('Thank You for your Message!')
+        const successfulSubmissionHeader = $('#contact_reply > h1');
+        await expect(successfulSubmissionHeader).toHaveText('Thank You for your Message!');
+		
+		//Jest Assertion:
+        //const successfulSubmissionHeader2 = await $('#contact_reply > h1').getText();
+        //expect(successfulSubmissionHeader2).toEqual('Thank You for your Message!555');
     });
 
     it('invalid submission - dont submit all information', async() => {

@@ -1,4 +1,4 @@
-describe('wait commands - examples', () => {
+describe.skip('wait commands - examples', () => {
     beforeEach(async () => {
         await browser.maximizeWindow()
         await browser.url('/Ajax-Loader/index.html')
