@@ -1,4 +1,4 @@
-describe('Deacription of test suite', () => {
+describe.skip('Deacription of test suite', () => {
     before(() => {
         console.log('runs once before the first test in this block.')
     });
